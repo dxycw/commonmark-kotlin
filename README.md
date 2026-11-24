@@ -16,7 +16,7 @@
 **该库旨在让 `commonmark-java` 能用于 Kotlin 多平台，提供 CommonMark Markdown 语法的解析和渲染功能。**
 
 [![许可证](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.dxycw/Commonmark--Kotlin?label=Maven%20Central&color=orange)](https://central.sonatype.com/artifact/io.github.dxycw/Commonmark--Kotlin)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.dxycw/Commonmark?label=Maven%20Central&color=orange)](https://central.sonatype.com/artifact/io.github.dxycw/Commonmark)
 [![Kotlin](https://img.shields.io/badge/kotlin-v2.4.21-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![Compose Multiplatform](https://img.shields.io/badge/Compose%20Multiplatform-v1.12.2-blue)](https://github.com/JetBrains/compose-multiplatform)
 
@@ -60,7 +60,7 @@ kotlin {
         // 多平台，
         commonMain.dependencies {
             // 如果使用多平台 Jetpack Compose Multiplatform 项目，请添加以下依赖项
-            implementation("io.github.dxycw:commonmark-kotlin:1.0.0")
+            implementation("io.github.dxycw:commonmark:1.0.0")
         }
     }
 }
