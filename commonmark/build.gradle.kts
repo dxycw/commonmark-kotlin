@@ -120,3 +120,42 @@ kotlin {
 dependencies {
     androidRuntimeClasspath(libs.compose.uiTooling)
 }
+
+mavenPublishing {
+    // 指向 Central Portal（不是旧的 OSSRH）
+    publishToMavenCentral()
+
+    // 自动签名所有 publication
+    signAllPublications()
+
+    coordinates(
+        groupId = "io.github.dxycw",
+        artifactId = "commonmark",
+        version = "1.0.0" // 从 gradle.properties 或版本目录读取更佳
+    )
+
+    pom {
+        name.set("commonmark-kotlin")
+        description.set("用于Kotlin多平台项目（Android、iOS、Desktop (Windows, MacOS 和 Linux)和 Web）的“commonmark-kotlin”包，使用Jetpack Compose Multiplatform开发。 注意：本库是本作者个人私库（不公开分享本库，不建议他人使用），如果想使用本库可以在项目中使用依赖库或克隆分支（可以自己新建一个分支修改本库，不可提交到本库），请不要上传提交，请勿私自外传本项目。")
+        url.set("https://github.com/dxycw/commonmark-kotlin")
+
+        licenses {
+            license {
+                name.set("Apache-2.0")
+                url.set("https://www.apache.org/licenses/LICENSE-2.0")
+            }
+        }
+        developers {
+            developer {
+                id.set("dxycw")
+                name.set("commonmark-kotlin")
+                email.set("3293666408@qq.com")
+            }
+        }
+        scm {
+            connection.set("scm:git:git://github.com/dxycw/commonmark-kotlin.git")
+            developerConnection.set("scm:git:ssh://github.com/dxycw/commonmark-kotlin.git")
+            url.set("https://github.com/dxycw/commonmark-kotlin")
+        }
+    }
+}
