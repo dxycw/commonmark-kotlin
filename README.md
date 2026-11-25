@@ -16,7 +16,7 @@
 **该库旨在让 `commonmark-java` 能用于 Kotlin 多平台，提供 CommonMark Markdown 语法的解析和渲染功能。**
 
 [![许可证](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.dxycw/Commonmark?label=Maven%20Central&color=orange)](https://central.sonatype.com/artifact/io.github.dxycw/Commonmark)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.dxycw/Commonmark--kotlin?label=Maven%20Central&color=orange)](https://central.sonatype.com/artifact/io.github.dxycw/Commonmark--kotlin)
 [![Kotlin](https://img.shields.io/badge/kotlin-v2.4.21-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![Compose Multiplatform](https://img.shields.io/badge/Compose%20Multiplatform-v1.12.2-blue)](https://github.com/JetBrains/compose-multiplatform)
 
@@ -105,6 +105,11 @@ val html = renderer.render(document)
 
 
 ## 更新日志
+
+### 1.0.1
+
+* 优化 项目文档，完善使用方法、平台支持、依赖库等信息；
+* 更新 AGP 版本为 9.5.2；
 
 ### 1.0.0
 
